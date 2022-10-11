@@ -69,41 +69,41 @@ Our goal for this analysis is to identify which features of the dataset are most
 ## Results
 
 ### Linear Regression R-Squared Scores
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/lin_reg_R2.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/lin_reg_R2.png>
 
 ### Linear Regression RMSE
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/lin_reg_RMSE.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/lin_reg_RMSE.png>
 
 - As shown, the linear regression model performed terribly with an R2 score of only 57% and an RMSE of $1,094. This means that only 57% of the variances can be accounted for with this model and the model has numerous large errors within it. 
 
 ### Random Forest R-Squared Scores
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/random%20forest%20R2.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/random%20forest%20R2.png>
 
 ### Random Forest RMSE
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/random%20forest%20RMSE.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/random%20forest%20RMSE.png>
 
 - When compared to the linear regression model, the Random forest performed about 3-4% better for the R2 score and a lower RMSE of $1,046. With that said, these results show that this model is still not very useful for legitimate sales predictions, which could be caused by the aspects mentioned in the "Methods" section above.
 
 ## Most Useful Data Visualizations
 ### Correlational Heatmap
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/Heatmap%20image.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/Heatmap%20image.png>
 
 - This heatmap shows that the two variables with the stronget correlations to item outlet sales are Item MRP (moderate) and item visibility (weak, but our second strongest correlation). The rest of the variables, unfortunately, have extremely weak correlations to sales.
 
 ### Scatterplot of Item MRP and Sales
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/Item%20MRP%20and%20Sales.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/Item%20MRP%20and%20Sales.png>
 
 - This scatterplot shows a clear and steady increase of sales as the material requirements planning increases for items. This is our best indicator for making sales predictions compared to the rest of our variables.
 
 ### Scatterplot of Item Visibility and Sales
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/Item%20Visibility%20and%20Sales.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/Item%20Visibility%20and%20Sales.png>
 
 - This scatterplot shows us that there is a sudden drop-off of sales after visibility reaches about 0.18%.
 This trend in the data seems counter-intuitive to what one might expect, and may be worth looking further into.
 Also, with this variable having the second highest correlation with sales, it should be our second best variable for predicting future sales.
 
 ### Boxplot of Outlet Types and Sales
-<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/Distribution%20of%20Sales%20Based%20on%20Outlet%20Types.png>
+<img src=https://github.com/ChrisDieck/food-sales-predictions/blob/main/images/Distribution%20of%20Sales%20Based%20on%20Outlet%20Types.png>
 
 - This distribution shows that Type 3 supermarkets have the highest median sales at $3,365 and the highest spread, while grocery stores have the lowest median sales at $257 with the lowest spread. Type 1 and Type 2 supermarkets are fairly similar.
     - Note: There also appears to be many outliers in this data.
